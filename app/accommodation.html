@@ -89,15 +89,15 @@ current: accommodation
     <div class="col d-block d-md-none">
       <div class="d-flex justify-content-center position-relative">
         <section class="filter flex-fill">
-          <button type="button" class="filter__btn filter__btn--after rounded-0  w-100 btn-primary btn font-size-md font-weight-bold text-secondary bg-white border-white" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="filter__btn filter__btn--after rounded-0  w-100 btn-primary btn font-size-md font-weight-bold text-secondary bg-white border-white" data-toggle="modal" data-target="#filterModal">
             <span class="material-icons mr-1">filter_list</span>
             FILTER
           </button>
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog m-0" role="document">
-              <div class="modal-content vh-100">
-                <div class="modal-header align-items-center border-0 p-0">
-                  <h6 class="modal-title" id="exampleModalLabel">
+          <div class="modal fade p-0" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+            <div class="modal-dialog m-0 w-100" role="document">
+              <div class="modal-content border-0 rounded-0 vh-100">
+                <div class="modal-header align-items-center border-0 w-100 bg-white z-index-1 position-fixed top-0 p-0">
+                  <h6 class="modal-title" id="filterModalLabel">
                     <button type="button" class="filter__btn w-100 btn-primary btn font-size-md font-weight-bold text-secondary bg-white border-white" data-toggle="modal" data-target="#exampleModal">
                       <span class="material-icons mr-1 list-inline-item">filter_list</span>
                       FILTER
@@ -107,13 +107,13 @@ current: accommodation
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div id="filter__modalBody" class="modal-body overflow-y-scroll overflow-x-hidden p-0">
+                <div id="filter__modalBody" class="modal-body filter__ModaBody overflow-y-scroll overflow-x-hidden pr-0 pl-0">
                   
                 </div>
-                <div class="filter__modalFooter modal-footer bg-secondary px-3 py-4">
+                <div class="filter__modalFooter modal-footer w-100 bg-secondary position-fixed bottom-0 px-3 py-4">
                   <h4 class="h4 text-white w-100 mb-4">Find 1,245 results</h4>
                   <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center">
-                    <button type="button" class="btn btn-secondary py-15 w-100 m-0 mr-1 font-weight-bold" data-dismiss="modal">CLEAR</button>
+                    <button type="button" class="btn border-white text-white font-weight-bold w-100 py-15 m-0 mr-1" data-dismiss="modal">CLEAR</button>
                     <button type="button" class="btn btn-primary py-15 w-100 m-0 ml-1 font-weight-bold">FILTER</button>
                   </div>
                 </div>
