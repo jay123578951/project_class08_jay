@@ -1,0 +1,58 @@
+.footerSubscribe {
+  height: auto;
+  @include pad() {
+    height: 320px;
+  }
+}
+.form-control {
+  line-height: 22px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.input-group-append {
+  button {
+    width: auto;
+    @include pad() {
+      width: 150px;
+    }
+  }
+}
+.footer__indexTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  @include pad() {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+}
+.footer__pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  @include largePad() {
+    font-size: 2rem;
+  }  
+}
+.footerBottom {
+  font-size: $font-size-sm;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+}
+.footerCopy {
+  width: 100%;
+  margin-right: 0;
+  @include pad() {
+    width: auto;
+    margin-right: 4rem;
+  }
+}
+.footerMenu {
+  width: 100%;
+  @include pad() {
+    width: auto;
+  }
+  li {
+    &:hover {
+      color: $primary;
+    }
+  }
+}

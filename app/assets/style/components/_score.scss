@@ -1,0 +1,20 @@
+// score of stars
+.score {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  .score__star {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: .25rem;
+  }
+  .material-icons {
+    font-size: 1.125rem;
+    color: #000;
+  }
+  .score__num {
+    font-size: $font-size-sm;
+    color: $info;
+  }
+}

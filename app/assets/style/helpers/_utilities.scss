@@ -1,0 +1,299 @@
+// Container
+.container-sm-100 {
+  max-width: 1140px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  @include pad() {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.container-md-100 {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include pad() {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// Width
+@include largePad() {
+  .w-lg-50 {
+    width: 50% !important;
+  }
+}
+.w-fit-content {
+  width: fit-content;
+}
+
+// Text
+.h2,.h3,.h4 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 0;
+}
+.h2 {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  @include pad() {
+    font-size: $font-size-max;
+    font-weight: 800;
+  }
+}
+.h3 {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  @include pad() {
+    font-size: $font-size-xl;
+    font-weight: 800;
+  }
+}
+.h4 {
+  font-size: $font-size-md;
+  font-weight: 700;
+  @include pad() {
+    font-size: $font-size-lg;
+  }
+}
+.h5 {
+  font-size: $font-size-base;
+  font-weight: 700;
+  margin-bottom: 0;
+  @include largePad() {
+    font-size: $font-size-lg;
+  }
+}
+.h6 {
+  font-weight: bold;
+}
+// Font size
+.font-size-22 {
+  font-size: 22px;
+}
+.font-size-md {
+  font-size: .875rem !important;
+}
+.font-size-sm {
+  font-size: .75rem !important;
+}
+@include largePad() {
+  .font-size-md-md {
+    font-size: .875rem !important;
+  }
+  .font-size-md-sm {
+    font-size: .75rem !important;
+  }
+}
+@include largePad() {
+  .font-size-lg-md {
+    font-size: .875rem !important;
+  }
+  .font-size-lg-sm {
+    font-size: .75rem !important;
+  }
+  .font-size-lg-base {
+    font-size: 1rem !important;
+  }
+}
+
+// Font family
+.font-family-Raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+// Position
+.position-initial {
+  position: initial !important;
+}
+.position-md-absolute {
+  @include pad() {
+    position: absolute !important;
+  }
+}
+// 0
+.top-0 {
+  top: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
+.left-0 {
+  left: 0;
+}
+// 4px
+.top-1 {
+  top: .25rem;
+}
+.bottom-1 {
+  bottom: .25rem;
+}
+.right-1 {
+  right: .25rem;
+}
+.left-1 {
+  left: .25rem;
+}
+// 8px
+.top-2 {
+  top: .5rem;
+}
+.bottom-2 {
+  bottom: .5rem;
+}
+.right-2 {
+  right: .5rem;
+}
+.left-2 {
+  left: .5rem;
+}
+@include pad() {
+  .top-md-2 {
+    top: .5rem;
+  }
+  .bottom-md-2 {
+    bottom: .5rem;
+  }
+  .right-md-2 {
+    right: .5rem;
+  }
+  .left-md-2 {
+    left: .5rem;
+  }
+}
+// 16px
+.top-3 {
+  top: 1rem;
+}
+.bottom-3 {
+  bottom: 1rem;
+}
+.right-3 {
+  right: 1rem;
+}
+.left-3 {
+  left: 1rem;
+}
+@include pad() {
+  .top-md-3 {
+    top: 1rem;
+  }
+  .bottom-md-3 {
+    bottom: 1rem;
+  }
+  .right-md-3 {
+    right: 1rem;
+  }
+  .left-md-3 {
+    left: 1rem;
+  }
+}
+@include largePad() {
+  .top-lg-3 {
+    top: 1rem;
+  }
+  .bottom-lg-3 {
+    bottom: 1rem;
+  }
+  .right-lg-3 {
+    right: 1rem;
+  }
+  .left-lg-3 {
+    left: 1rem;
+  }
+}
+
+// Button
+.moreBtn {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  padding: .5rem 1rem;
+  color: $primary;
+  background: #fff;
+  border: 1px solid $primary;
+  border-radius: .25rem;
+  &:hover {
+    color: #fff;
+    background: $primary;
+  }
+}
+
+// Margin
+.mb-md-negative-1 {
+  @include pad() {
+    margin-bottom: -0.25rem !important;
+  }
+}
+
+// background
+.bg-md-white {
+  @include pad() {
+    background: white !important;
+  }
+}
+
+// Hover
+a.text-hover {
+  text-decoration: none !important;
+  &:hover {
+    color: $primary !important;
+  }
+}
+a.btn-hover-white {
+  &:hover {
+    color: $secondary !important;
+    background-color: #fff !important;
+  }
+}
+
+// Border
+@include pad() {
+  .border-right-md-0 {
+    border-right: none !important;
+  }
+  .border-left-md-0 {
+    border-right: none !important;
+  }
+}
+
+// Border radius
+.rounded-size-8 {
+  border-radius: .5rem !important;
+}
+@include pad() {
+  .rounded-size-md-8 {
+    border-radius: .5rem !important;
+  }
+  .rounded-md {
+    border-radius: .25rem !important;
+  }
+  .rounded-md-0 {
+    border-radius: 0 !important;
+  }
+}
+
+// Opacity
+.opacity-60 {
+  opacity: .6 !important;
+}
+
+// Overflow
+.swiper--overflow {
+  overflow: initial;
+  @include largePad() {
+    overflow: hidden;
+  }
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
