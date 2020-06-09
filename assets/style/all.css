@@ -13574,6 +13574,10 @@ a.btn-hover-white:hover {
   overflow-x: hidden;
 }
 
+.z-index-1 {
+  z-index: 1 !important;
+}
+
 .iconToggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13993,6 +13997,11 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.filter__ModaBody {
+  padding-top: 56px;
+  padding-bottom: 165px;
 }
 
 .filter__modalFooter {
