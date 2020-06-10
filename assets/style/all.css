@@ -13527,6 +13527,11 @@ a.btn-hover-white:hover {
   background-color: #fff !important;
 }
 
+.btn-focus-0:focus {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
 @media (min-width: 768px) {
   .border-right-md-0 {
     border-right: none !important;
