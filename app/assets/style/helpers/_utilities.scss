@@ -253,6 +253,14 @@ a.btn-hover-white {
   }
 }
 
+// Focus
+.btn-focus-0 {
+  &:focus {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+}
+
 // Border
 @include pad() {
   .border-right-md-0 {
